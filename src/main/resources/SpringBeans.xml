@@ -10,4 +10,12 @@
         <property name="warning" value="false"/>
     </bean>
 
+    <bean id="loggerFile" class="log.LogFileManager" init-method="init">
+        <property name="debug" value="false"/>
+        <property name="error" value="false"/>
+        <property name="info" value="true"/>
+        <property name="warning" value="false"/>
+        <property name="path" value="/home/xavi"/>
+
+    </bean>
 </beans>

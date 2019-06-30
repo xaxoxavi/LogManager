@@ -12,7 +12,7 @@ public class Main
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext(
                 "SpringBeans.xml");
-        LogManager log = (LogManager) context.getBean("logger");
+        LogManager log = (LogManager) context.getBean("loggerFile");
         log.info("prova!!");
         
     }
