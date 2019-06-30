@@ -5,21 +5,7 @@ package log;
  */
 public class LogConsoleManager extends LogAbstractManager {
 
-
-    private static LogManager instance;
-
     LogConsoleManager(){}
-
-    public static LogManager getInstance(){
-        if (instance == null){
-            createInstance();
-        }
-        return instance;
-    }
-
-    private  synchronized static void createInstance(){
-        if (instance == null) instance = new LogConsoleManager();
-    }
 
 
     public void info(String text) {

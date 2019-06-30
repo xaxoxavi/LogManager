@@ -5,10 +5,10 @@ package log;
  */
 public abstract class LogAbstractManager implements LogManager{
 
-    private boolean isInfo;
-    private boolean isDebug;
-    private boolean isError;
-    private boolean isWarning;
+    private boolean isInfo = true;
+    private boolean isDebug = true;
+    private boolean isError = true;
+    private boolean isWarning = true;
 
     public void setInfo(boolean info) {
         isInfo = info;
